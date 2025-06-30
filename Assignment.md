@@ -10,7 +10,8 @@
 ## 2. Deployed Portfolio Link
 
 - **GitHub Pages URL**:  
-  _(Provide the live link to your deployed portfolio website)_
+https://is-project-4th-year.github.io/build-your-portfolio-github-workflow-essentials-EssyKibz/
+
 
 ## 3. Learnings from the Git Crash Program
 
@@ -25,14 +26,6 @@ And how it helped with your personal portfolio project 💻
 
 make it honest—and if it surprised you, even better!
 
-Example format:
-
-**🧠 What I Thought I'd Learn vs What I Actually Learned**
-
-
-## **🧠 What I Thought I'd Learn vs What I Actually Learned**
-
----
 
 ### **1. Concept: Branching**
 
