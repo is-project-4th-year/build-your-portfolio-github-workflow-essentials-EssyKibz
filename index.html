@@ -93,9 +93,21 @@
       transform: scale(1.02);
     }
 
+    /* Contact section unique styling */
+    #contact {
+      background: #f0f0f5;
+    }
+
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+    }
+
     .contact-icons a {
-      font-size: 1.5rem;
-      margin-right: 1rem;
+      font-size: 1.8rem;
+      margin: 0 1rem;
       color: #2c3e50;
       text-decoration: none;
       transition: color 0.3s ease;
@@ -116,7 +128,7 @@
 <body>
 
   <header>
-    <img src="profile.jpg" alt="Profile Photo" class="profile-pic">
+    <img src="linkedin.jpg" alt="Profile Photo" class="profile-pic">
     <h1>Esther Kibugi</h1>
     <p>Creative Developer | Problem Solver | ML Enthusiast</p>
   </header>
@@ -150,6 +162,14 @@
       <a href="mailto:estherkibugi030@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
       <a href="https://www.linkedin.com/in/esther-kibugi-833438256/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
     </div>
+
+        <form action="mailto:estherkibugi030@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
   </section>
 
   <footer>
