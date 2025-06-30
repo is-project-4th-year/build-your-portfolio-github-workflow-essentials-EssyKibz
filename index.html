@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esther Kibugi | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-3zswZz0eUtGz8W1ndRSIarF7RCZxq3JHHuWmKc+lgjZczQuqYpqgUGctvfsAgIRcNEth7T4fT6Fmu3YY1A6r0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #eef2f3, #8e9eab);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    .profile-pic {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 5px solid #1abc9c;
+      object-fit: cover;
+      animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-top: 1rem;
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    header p {
+      color: #555;
+      font-size: 1.3rem;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      background: #2c3e50;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #1abc9c;
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: 4rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1.5s ease;
+    }
+
+    .section h2 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+      color: #2c3e50;
+      text-align: center;
+
+    }
+
+    .section p {
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
+
+    .project-card {
+      margin: 1.5rem 0;
+      background: #f8f9fa;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .project-card h3 {
+      color: #1a1a1a;
+    }
+
+    .project-card p {
+      margin-top: 0.5rem;
+      color: #555;
+    }
+
+    .project-card .tech {
+      font-style: italic;
+      margin-top: 0.5rem;
+      color: #444;
+    }
+
+    .project-card a {
+      display: block;
+      width: fit-content;
+      margin: 1rem auto 0 auto;
+      padding: 0.5rem 1rem;
+      background-color: #1abc9c;
+      color: white;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      transition: background 0.3s;
+      text-align: center;
+    }
+
+    .project-card a:hover {
+      background-color: #16a085;
+    }
+
+    .contact-icons {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .contact-icons a {
+      margin: 0 1rem;
+      font-size: 2rem;
+      color: #2c3e50;
+    }
+
+    .contact-icons a:hover {
+      color: #1abc9c;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    form input, form textarea {
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      resize: vertical;
+    }
+
+    form button {
+      background-color: #1abc9c;
+      color: white;
+      padding: 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    form button:hover {
+      background-color: #16a085;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="linkedin.jpg" alt="Profile Photo" class="profile-pic">
+    <h1>Esther Kibugi</h1>
+    <p>Creative Developer | AI Explorer | ML Enthusiast | Tech for Impact</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I’m Esther Kibugi, a passionate and creative full-stack developer with a deep interest in machine learning, artificial intelligence, and solving real-world problems through tech. My journey spans across UI/UX design, web development, and deploying ML models for meaningful applications. When I’m not coding, I enjoy sketching, experimenting with new frameworks, and exploring open-source communities. I strive to make technology not only functional but also beautiful and impactful.</p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>This very site! A clean and modern responsive portfolio designed to highlight my skills, background, and projects using HTML, CSS, and minimal JavaScript.</p>
+      <p class="tech"> <b>Technologies:</b> HTML, CSS, JavaScript</p>
+      <a href="https://github.com/is-project-4th-year/build-your-portfolio-github-workflow-essentials-EssyKibz" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project-card">
+      <h3>Agriculture Consult App</h3>
+      <p>A platform to connect farmers with agricultural consultants using a full-stack MERN architecture. Implemented live chat, appointment booking, and resource libraries.</p>
+      <p class="tech"> <b>Technologies:</b> MongoDB, Express, React, Node.js</p>
+      <a href="https://github.com/EssyKibz/agricconsultwebapp" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project-card">
+      <h3>Sentiment Classifier</h3>
+      <p>A sentiment analysis pipeline using deep learning and a generative model, trained on the IMDB movie review dataset. Includes visual dashboards and deployment on Hugging Face Spaces.</p>
+      <p class="tech"><b>Technologies:</b> Python, TensorFlow, Hugging Face, Streamlit</p>
+      <a href="https://github.com/EssyKibz/Sentiment_Analysis" target="_blank">View on GitHub</a>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="contact-icons">
+      <a href="mailto:estherkibugi030@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/esther-kibugi-833438256/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <form action="mailto:estherkibugi030@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Esther Kibugi. Crafted with passion and purpose.
+  </footer>
+</body>
+</html>
