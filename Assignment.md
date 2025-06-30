@@ -95,12 +95,12 @@ Include screenshots that demonstrate how you used GitHub to manage your project.
 ### C. Branching
 
 - Screenshot showing your branch list with meaningful naming.
-![alt text](image-2.png)
+![Branch List](image-2.png)
 ### D. Pull Requests
 
 - Screenshot of a pull request that’s either open or merged and linked to a related issue.
-![alt text](image-3.png)
+![Pull request](image-3.png)
 ### E. Merge Conflict Resolution
 
 - Screenshot of a resolved merge conflict (in a pull request, commit history, or your local terminal/GitHub Desktop).
-![alt text](image-4.png)
+!Merge Conflicts](image-4.png)
